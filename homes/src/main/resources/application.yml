@@ -1,0 +1,16 @@
+#app
+server:
+    port: 8080
+
+#spring
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hope?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+
+#mybatis
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml
